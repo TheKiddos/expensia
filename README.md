@@ -23,7 +23,7 @@ NPM Version Used: 7.19.1
 
 go to frontend/expensia directory.
 
-rub:
+run:
 
 ```
 npm install --force
