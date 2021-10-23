@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_spectacular',
     'django_extensions',
+
+    # own
+    'expense'
 ]
 
 MIDDLEWARE = [
