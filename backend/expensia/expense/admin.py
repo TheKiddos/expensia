@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Category, Expense
 
 # Register your models here.
-admin.site.register(Category)
+
 
 
 class ExpenseAdmin(admin.ModelAdmin):
@@ -26,3 +26,4 @@ class ExpenseAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Expense, ExpenseAdmin)
+admin.site.register(Category)

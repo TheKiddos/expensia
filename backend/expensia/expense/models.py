@@ -1,4 +1,7 @@
+from decimal import Decimal
+
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 from rest_framework.reverse import reverse
 
 
@@ -24,14 +27,13 @@ class Expense(models.Model):
     )
     category = models.ForeignKey(Category,on_delete=models.SET_NULL)
 
-
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
         return reverse("expense:expense_details", args=(self.id,))
 
-    def get_amountt(self):
+    def get_amount(self):
         return Decimal(self.amount)
 
     def get_categories(self):

@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from .views import (
-    ExpenseCategoryView,
+    ExpenseCategoryView, ExpenseViewSet,
 )
 
 app_name = 'expense'

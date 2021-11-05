@@ -1,4 +1,4 @@
-from .models import Category
+from .models import Category, Expense
 from .serializers import CategorySerializer, ExpenseSerializer
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
