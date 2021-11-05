@@ -10,5 +10,6 @@ app_name = 'expense'
 router = DefaultRouter()
 
 router.register('category', ExpenseCategoryView, basename='category')
+router.register('expense', ExpenseViewSet, basename='expense')
 
 urlpatterns = router.urls
