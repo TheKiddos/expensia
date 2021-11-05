@@ -1,6 +1,7 @@
 # expensia
 Expensia is a simple expense tracker site.
-
+![Logo](logos/expensia%20logo_main%20.png)
+![Logo](logos/expensia%20logo_1.png)
 
 ## Installation
 <hr/>
