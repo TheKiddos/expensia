@@ -15,10 +15,11 @@ class ExpenseViewSet(ModelViewSet):
     queryset = Expense.objects.all()
     serializer_class = ExpenseSerializer
     permission_classes = (AllowAny,)
-    filter_fields = ("start_date", "end_date")
-    lookup_field = "id"
 
-    def get_serializer_context(self):
-        ctx = super(ExpenseViewSet, self).get_serializer_context()
-        ctx["request"] = self.request
-        return ctx
+    def filter_queryset(self, queryset):
+        qs = super(ExpenseViewSet, self).filter_queryset(queryset)
+
+        if self.request.method == "GET":
+            pass
+        return qs
+
