@@ -31,3 +31,7 @@ npm install --force
 ```
 
 <hr/>
+
+## Credits
+
+Design: https://dribbble.com/shots/15654856-Fundbatch-Dashboard
