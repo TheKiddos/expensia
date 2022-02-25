@@ -65,7 +65,7 @@ body {
 /* End Header Stuff */
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .title {
@@ -155,7 +155,7 @@ body {
 }
 
 .item__action {
-    flex: 10%;
+    margin: 0 5px;
     font-weight: bold;
     font-size: 1rem;
     font-family: monospace;
