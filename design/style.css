@@ -20,12 +20,21 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    animation: slide-down 0.2s ease-in;
+    animation: slide-down 0.6s ease-in;
 }
 
 @keyframes slide-down {
     0% {
         transform: translate(0, -100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translate(-1000px, 0px);
     }
     100% {
         transform: translate(0, 0);
@@ -76,6 +85,10 @@ body {
 .container {
     width: 80%;
     margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    animation: slide-right 1s;
 }
 
 .title {
@@ -107,6 +120,7 @@ body {
 
 .column {
     flex: 50%;
+    width: 50%;
     text-align: center;
 }
 
@@ -114,6 +128,10 @@ body {
     overflow-y: scroll;
     max-height: 500px;
     padding: 0;
+}
+
+.list--horizontal ul {
+    overflow-y: visible;
 }
 
 .list__title {
@@ -127,6 +145,7 @@ body {
     color: darkslateblue;
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: monospace;
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -146,6 +165,10 @@ body {
     margin-bottom: 10px;
     transition: all 0.5s;
     border-radius: 20px;
+}
+
+.list--horizontal .list__item {
+    display: inline-block;
 }
 
 .list__item:hover {
