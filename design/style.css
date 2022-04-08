@@ -238,3 +238,12 @@ body {
 .item__action:hover {
     background: lightgray;
 }
+
+select, option {
+    border: none;
+    color: grey;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    transition: all 0.5s;
+}

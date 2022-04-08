@@ -21,7 +21,7 @@
         <h1 class="title">Expensia</h1>
         <div class="row">
             <div class="column">
-                <div class="list list--vertical">
+                <section class="list list--vertical">
                     <div class="list__title">
                         Latest Spending
                         <i class="title__action">+</i>
@@ -86,13 +86,25 @@
                         </li>
 
                     </ul>
-                </div>
+                </section>
             </div>
             <div class="column">
-                <canvas id="expense-chart"></canvas>
-                <div class="list list--horizontal">
+                <section>
+                    <div class="section__header">
+                        <div class="section__title">Statistics</div>
+                        <div class="section__actions">
+                            <select name="" id="">
+                                <option value="Month" selected>Month</option>
+                                <option value="Year">Year</option>
+                            </select>
+                            April - 2022
+                        </div>
+                    </div>
+                    <canvas id="expense-chart"></canvas>
+                </section>
+                <section class="list list--horizontal">
                     <div class="list__title">
-                        Latest Spending
+                        Categories
                         <i class="title__action">+</i>
                     </div>
                     <hr />
@@ -141,7 +153,7 @@
                         </li>
 
                     </ul>
-                </div>
+                </section>
             </div>
         </div>
     </main>
