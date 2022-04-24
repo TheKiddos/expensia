@@ -1,24 +1,24 @@
 <template>
-  <div class="container">
-    <header class="hero">
-      <img :src="logo" />
-      <hello></hello>
-    </header>
+  <div>
+    <TheHeader></TheHeader>
+    <div class="container">
+      <header class="hero">
+      </header>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from '@/views/components/hello';
-import logo from '@/assets/logo.png';
+import TheHeader from '@/views/layouts/TheHeader';
 
 export default {
   name: 'App',
   components: {
-    Hello
+    TheHeader
   },
   data() {
     return {
-      logo
+
     };
   }
 };

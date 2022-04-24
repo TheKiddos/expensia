@@ -2,3 +2,8 @@
 @import 'vendor';
 @import 'mixins';
 @import 'reset';
+
+* {
+  margin: 0;
+  //font-family: "Roboto Light", serif;
+}
