@@ -1,9 +1,6 @@
 <template>
   <header class="main-header">
-    <div class="form-group">
-      <i class="fa fa-search"></i>
-      <input type="search" placeholder="Search...">
-    </div>
+    <h1 class="title">Expensia</h1>
   </header>
 </template>
 
