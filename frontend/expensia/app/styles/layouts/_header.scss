@@ -19,10 +19,7 @@
 }
 
 .title {
-  color: blueviolet;
-  font-weight: bold;
-  font-size: 2.5rem;
-  font-family: Arial, serif;
+  @extend .page-title;
   animation: move 10s ease-in-out infinite;
   display: inline-block;
 }

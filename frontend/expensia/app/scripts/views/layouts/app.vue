@@ -1,20 +1,21 @@
 <template>
   <div>
     <TheHeader></TheHeader>
-    <div class="container">
-      <header class="hero">
-      </header>
-    </div>
+    <main class="container">
+      <home-dashboard></home-dashboard>
+    </main>
   </div>
 </template>
 
 <script>
-import TheHeader from '@/views/layouts/TheHeader';
+import TheHeader from './TheHeader';
+import HomeDashboard from '@/views/pages/HomeDashboard';
 
 export default {
   name: 'App',
   components: {
-    TheHeader
+    TheHeader,
+    HomeDashboard
   },
   data() {
     return {
