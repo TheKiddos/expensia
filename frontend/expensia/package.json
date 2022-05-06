@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "balm-ui": "^8.49.5",
     "vue": "^2.6.0",
     "vuex": "^3.6.2"
   },
