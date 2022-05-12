@@ -1,17 +1,18 @@
 <template>
   <div>
     <h1 class="page-title">Dashboard</h1>
-    <ui-list>
-      <ui-item v-for="i in 3" :key="i">
-        <ui-item-text-content>Line item</ui-item-text-content>
-      </ui-item>
-    </ui-list>
+    <expense-list></expense-list>
   </div>
 </template>
 
 <script>
+import ExpenseList from '@/views/components/expense/ExpenseList';
+
 export default {
-  name: "HomeDashboard"
+  name: "HomeDashboard",
+  components: {
+    ExpenseList,
+  },
 }
 </script>
 
